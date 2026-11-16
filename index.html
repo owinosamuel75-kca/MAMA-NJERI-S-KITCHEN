@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mama Njeri's Kitchen - Fresh Kenyan food, cooked daily in Nairobi.">
+    <title>Mama Njeri's Kitchen | Fresh Kenyan Food</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <a class="brand" href="#home">
+            <img src="assets/logo.svg" alt="Mama Njeri's Kitchen logo">
+            <span>Mama Njeri's Kitchen</span>
+        </a>
+
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#order">Order</a>
+            <a href="#visit">Visit</a>
+        </nav>
+    </header>
+
+    <main id="home">
+
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">A taste of home</p>
+                <h1>Fresh Kenyan food,<br>cooked daily.</h1>
+                <p>Good food, generous portions and the comforting flavours you love.</p>
+                <a class="button button-light" href="#menu">Explore our menu</a>
+            </div>
+
+            <img src="assets/hero.svg" alt="Kenyan food" class="hero-art">
+        </section>
+
+        <section class="content-grid">
+
+            <section class="panel menu-panel" id="menu">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Made with care</p>
+                        <h2>Today's Menu</h2>
+                    </div>
+                    <span class="tag">Fresh & tasty</span>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dish</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Pilau</td>
+                            <td>KES 350</td>
+                        </tr>
+                        <tr>
+                            <td>Ugali &amp; Sukuma</td>
+                            <td>KES 250</td>
+                        </tr>
+                        <tr>
+                            <td>Chapati (2)</td>
+                            <td>KES 100</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="panel order-panel" id="order">
+                <p class="eyebrow">Hungry already?</p>
+                <h2>Place an Order</h2>
+                <p>Choose your favourite dish and send your order request.</p>
+
+                <form id="order-form">
+                    <label for="customer-name">Your name</label>
+                    <input type="text" id="customer-name" name="customerName"
+                        placeholder="Enter your name" required>
+
+                    <label for="dish">Choose a dish</label>
+                    <select id="dish" name="dish" required>
+                        <option value="Pilau">Pilau - KES 350</option>
+                        <option value="Ugali & Sukuma">Ugali &amp; Sukuma - KES 250</option>
+                        <option value="Chapati (2)">Chapati (2) - KES 100</option>
+                    </select>
+
+                    <button class="button" type="submit">Send Order</button>
+                    <p id="form-message" role="status"></p>
+                </form>
+            </section>
+
+        </section>
+
+        <section class="panel gallery-panel">
+            <p class="eyebrow">A little something delicious</p>
+            <h2>From Our Kitchen</h2>
+
+            <div class="gallery">
+                <figure>
+                    <img src="assets/pilau.svg" alt="Pilau">
+                    <figcaption>Pilau</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="assets/ugali.svg" alt="Ugali and Sukuma">
+                    <figcaption>Ugali &amp; Sukuma</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="assets/chapati.svg" alt="Chapati">
+                    <figcaption>Chapati</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="visit-grid" id="visit">
+
+            <div class="panel visit-card">
+                <h2>Opening Hours</h2>
+                <p><strong>Monday - Saturday</strong><br>8:00 AM - 8:00 PM</p>
+                <p><strong>Sunday</strong><br>9:00 AM - 5:00 PM</p>
+            </div>
+
+            <div class="panel visit-card">
+                <h2>Contact &amp; Location</h2>
+                <p><strong>Mama Njeri's Kitchen</strong><br>Nairobi, Kenya</p>
+                <p>Phone: Add business phone number</p>
+                <p>Email: Add business email</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Mama Njeri's Kitchen. Made with love in Nairobi.</p>
+        <a href="#home">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
